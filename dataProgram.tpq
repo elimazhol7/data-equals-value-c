@@ -1,0 +1,33 @@
+1. My main handles user interaction, file opening, and coordination between reading and writing. It is under 10 lines excluding I/O prompts.
+
+2.Each Person object reads one full data group, consisting of all labeled fields until a blank line or EOF.
+
+3. It reads lines until it hits a blank line, comment, or end-of-file.
+
+4.Lines starting with # are treated as comments and skipped.
+
+5.Any line containing = with a valid label on the left is treated as a labeled data line.
+
+6. If a line doesn’t contain = and isn’t a comment, it’s ignored.
+
+7. By encountering a blank line, an invalid label, or the start of a new block.
+
+8.Either the last block is processed normally, or the loop ends if no data started.
+
+9. Only fields with valid labels are written; missing ones are skipped.
+
+10.By finding the first '=' and splitting using substrings before and after it.
+
+11.Only the first '=' is used as a delimiter, so values can contain = safely.
+
+12.No, extra spaces around labels or separators are trimmed.
+
+13.Valid labels are name, id, gpa, or gender (case-insensitive).
+
+14.No, each data line corresponds to one label for simplicity and clarity.
+
+15.No, but both use similar parsing logic with stringstream.
+
+16.Bool uses “true/false”, char uses first character, and string keeps the whole text.
+
+17.They’re header-only templates, fully defined in headers for generic reuse.

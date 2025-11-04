@@ -1,0 +1,22 @@
+# format is 'label = value' -- one per line
+# known labels are: name, ID, GPA, and gender
+# spacing around '=' is okay
+name = Jason James
+ID= 123456
+GPA =9.2
+gender=M
+# mixed items
+name = Tammy James
+GPA = 11.2
+gender = f
+ID = 123457
+# mixed, missing, and extra fields
+name = Henry Ramirez
+GPA = 12.3
+ID = 111888
+major = ChE
+class = soph
+ID = 788531
+# missing fields
+name=Suzie Shah
+geNDEr=t
