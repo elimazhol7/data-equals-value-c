@@ -1,8 +1,8 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include "PersonData.h"
-#include "StringUtils.h"
+#include "personData.h"
+#include "stringUtils.h"
 using namespace std;
 
 int main() {
