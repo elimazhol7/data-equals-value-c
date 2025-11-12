@@ -5,8 +5,11 @@
 void trim(string &s) {
     size_t start = s.find_first_not_of(" \t\r\n");
     size_t end = s.find_last_not_of(" \t\r\n");
-    if (start == string::npos) s = "";
-    else s = s.substr(start, end - start + 1);
+    if (start == string::npos) {
+        s = "";
+    } else {
+        s = s.substr(start, end - start + 1);
+    }
 }
 
 string trimCopy(string s) {
@@ -15,7 +18,9 @@ string trimCopy(string s) {
 }
 
 string toLower(string s) {
-    for (char &c : s) c = tolower(c);
+    for (char &c : s) {
+        c = static_cast<char>(tolower(static_cast<unsigned char>(c)));
+    }
     return s;
 }
 
